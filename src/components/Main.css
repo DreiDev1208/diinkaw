@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar-container {
+  flex: 0 0 auto;
+  z-index: 1;
+}
+
+.map-container {
+  flex: 1;
+  overflow: hidden;
+  z-index: 0;
+}

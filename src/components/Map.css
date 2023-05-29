@@ -1,0 +1,27 @@
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .recenter-button {
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e07b70;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .recenter-button:hover {
+    transform: scale(1.2);
+  }

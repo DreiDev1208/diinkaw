@@ -1,0 +1,126 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e07b70d2;
+    padding: 13px;
+  }
+
+  .navbar-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation li {
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .profile-icon,
+  .burger-icon {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    background-color: #e07b70d2;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  .mobile .navbar-left {
+    display: none;
+  }
+
+  @media (max-width: 420px) {
+    .mobile .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .mobile .navbar-right {
+      margin-left: auto;
+    }
+
+    .navigation {
+      flex-direction: column;
+    }
+
+    .navigation li {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    .navbar-menu {
+      display: block;
+    }
+  }
+
+  /* Account Menu Styles */
+  .account-menu-wrapper {
+    position: relative;
+  }
+
+  .account-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #e07b70d2;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    min-width: 150px;
+  }
+
+  .account-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .account-menu ul li {
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .account-menu ul li:first-child {
+    margin-top: 13px;
+    margin-bottom: 10px;
+  }
+
+  .account-menu-wrapper:hover .account-menu {
+    display: block;
+  }
+
+  .account-menu-wrapper:hover .account-menu ul li {
+    color: white;
+    cursor: pointer;
+  }
+
+  .account-menu-wrapper:hover .account-menu ul li:first-child {
+    border-bottom: 1px solid white;
+  }
